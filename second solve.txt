@@ -1,0 +1,232 @@
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/MONSTER/Desktop/Coding/xdfgx/empty/.git/
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git remote add origin https://github.com/practicaltesting000/empty.git
+fatal: remote origin already exists.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git push -u origin master
+To https://github.com/practicaltesting000/empty.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/practicaltesting000/empty.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git statys
+git: 'statys' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new fiel.txt
+        problem solve.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git add .
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new fiel.txt
+        new file:   problem solve.txt
+
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git remote add origin https://github.com/practicaltesting000/empty.git
+fatal: remote origin already exists.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git push -u origin master
+To https://github.com/practicaltesting000/empty.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/practicaltesting000/empty.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git pull origin master
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 7 (delta 2), reused 7 (delta 2), pack-reused 0
+Unpacking objects: 100% (7/7), 700 bytes | 18.00 KiB/s, done.
+From https://github.com/practicaltesting000/empty
+ * branch            master     -> FETCH_HEAD
+   cb7cf28..ca9f70e  master     -> origin/master
+Updating cb7cf28..ca9f70e
+Fast-forward
+ empty | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 160000 empty
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new fiel.txt
+        new file:   problem solve.txt
+
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ ls
+'bug fix 1.16v'  'dog love to eat'   empty/  'new fiel.txt'  'problem solve.txt'   README.md
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ rm empty/
+rm: cannot remove 'empty/': Is a directory
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ rmdir empty/
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ ls
+'bug fix 1.16v'  'dog love to eat'  'new fiel.txt'  'problem solve.txt'   README.md
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git pull origin master
+From https://github.com/practicaltesting000/empty
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new fiel.txt
+        new file:   problem solve.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    empty
+
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git rmdir empty
+git: 'rmdir' is not a git command. See 'git --help'.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git rm empty
+rm 'empty'
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    empty
+        new file:   new fiel.txt
+        new file:   problem solve.txt
+
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git commit
+hint: Waiting for your editor to close the file...
+[main 2020-10-31T11:25:07.975Z] update#setState idle
+(node:8880) Electron: Loading non-context-aware native module in renderer: '\\?\C:\Users\MONSTER\AppData\Local\Programs\Microsoft VS Code\resources\app\node_modules.asar.unpacked\vscode-sqlite3\build\Release\sqlite.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+(node:8880) Electron: Loading non-context-aware native module in renderer: '\\?\C:\Users\MONSTER\AppData\Local\Programs\Microsoft VS Code\resources\app\node_modules.asar.unpacked\spdlog\build\Release\spdlog.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+(node:10732) Electron: Loading non-context-aware native module in renderer: '\\?\C:\Users\MONSTER\AppData\Local\Programs\Microsoft VS Code\resources\app\node_modules.asar.unpacked\spdlog\build\Release\spdlog.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+[main 2020-10-31T11:25:38.066Z] update#setState checking for updates
+[main 2020-10-31T11:25:38.837Z] update#setState idle
+[master 570416e] commit days : 31 days
+ 3 files changed, 298 insertions(+), 1 deletion(-)
+ delete mode 160000 empty
+ create mode 100644 new fiel.txt
+ create mode 100644 problem solve.txt
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 2.72 KiB | 397.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/practicaltesting000/empty.git
+   ca9f70e..570416e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git pull origin master && git push -u origin master
+From https://github.com/practicaltesting000/empty
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git pull origin master
+From https://github.com/practicaltesting000/empty
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MONSTER@MONSTER MINGW32 ~/Desktop/Coding/xdfgx/empty (master)
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
